@@ -1,45 +1,75 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# Android related files
+android/.gradle
+android/.idea
+android/app/build
+android/build
+android/output
+android/.dart_tool
+android/local.properties
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# iOS related files
+ios/Pods
+ios/.symlinks
+ios/Runner.xcworkspace
+ios/Runner.xcodeproj/project.xcworkspace
+ios/build
+ios/DerivedData
+ios/.dart_tool
+
+# Web related files
+web/build
+web/.dart_tool
+
+# Linux related files
+linux/build
+linux/.dart_tool
+
+# macOS related files
+macos/build
+macos/.dart_tool
+
+# Windows related files
+windows/build
+windows/.dart_tool
+
+# Flutter build output directory
+build/
+
+# IntelliJ/Android Studio specific files
 .idea/
+*.iml
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code specific files
+.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
+# Gradle cache
+.gradle/
+
+# Local development config (often contains API keys or sensitive info)
+local.properties
+
+# Temporary files and directories
+.tmp/
+tmp/
+*.log
+
+# Crash reports
+crashlytics/
+
+# Packages and generated files
+.packages
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+**/generated_plugin_registrant.dart
+**/generated/l10n.dart
 
-# Symbolication related
-app.*.symbols
+# Editor backups and temporary files (can be more specific if needed)
+*~
+*.swp
 
-# Obfuscation related
-app.*.map.json
+# Dart compiled files
+*.dart.vm.*
+*.dart.js.*
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Exclude the analysis options cache (can cause issues if shared)
+.dart_tool/package_config.json
